@@ -1,15 +1,15 @@
-CSS Sytle Types:
+Method of writing CSS Sytle:
     - Inline            We use an attribute     =>  [style=""]
     - Internal          We use the element      =>  <style></style>
     - External          We use an external file =>  fileName.css
 
-CSS Style Selctors:
+Basic CSS Selctors:
     There are three (3) type of basic selectors
     - Element Name
     - ID Name
     - Class Name
 
-Selector Rule:
+Style Rule:
     selectorName {
         /* code here.. */
         property: value;
