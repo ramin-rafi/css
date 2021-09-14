@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <title>CSS - UI Style Guide</title>
+
+    <!--
+        Absolute Path:
+        - http://domainName.com/dir/dir/fileName.css
+        - https://domainName.com/dir/dir/fileName.css
+        - https://www.domainName.com/dir/dir/fileName.css
+
+
+        Relative Path:
+        ./dir/dir/dir/fileName.js
+        ../dir/fileName.css
+        /dir/dir/fileName.css
+        dir/fileName.css
+    -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heading Level 1</h1>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+        <h6>Heading Level 6</h6>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones.
+            Quod quidem iam fit etiam in Academia. Duo Reges: constructio interrete. Summus dolor plures dies manere non
+            potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria sunt his,
+            malane? </p>
+
+        <a href="javascript:void(0)" target="" title="title here">Link CTA</a>
+
+        <!-- Via Relative Path -->
+        <img src="images/hunza.jpg" alt="image here" width="300">
+
+        <!-- Via Absolute Path -->
+        <img src="https://placeimg.com/640/480/nature" alt="image here" width="300">
+
+        <form action="uiGuide.html" method="GET">
+            <div>
+                <label for="f-name">First Name:</label>
+                <input type="text" placeholder="First name...">
+            </div>
+            <div>
+                <label for="l-name">Last Name:</label>
+                <input type="text" placeholder="Last name...">
+            </div>
+            <div>
+                <label for="fa-name">Father Name:</label>
+                <input type="text" placeholder="Father name...">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email here...">
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+
+                <input name="gender" type="radio" value="Male"> Male
+                <input name="gender" type="radio" value="Female"> Female
+            </div>
+
+            <button type="button">Button</button>
+            <input type="button" value="Input Button">
+
+            <button type="submit">Button</button>
+            <input type="submit" value="Input Button">
+        </form>
+    </div>
+</body>
+
+</html>
