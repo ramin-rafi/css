@@ -1,0 +1,79 @@
+FONT:
+Font element use in email templating
+because there is inline styling
+
+
+---------------------------------------
+
+STYLE:
+- style overide the behavior of attribute
+- <style> style tag must be inside body
+
+ID => #
+class => .
+-------------------------------------------
+
+DIV:
+div. => classname
+div# => IDname
+
+- ID is unique it can't be replaced.
+---------------------------------------------------
+
+BORDER:
+border-width
+border-style
+border-color
+
+FONT:
+font-weight
+font-family
+font-color
+font-size
+--------------------------------------------------------
+
+BORDER BOX:
+
+-height+ width [by default =>content box property]
+(if we give height width to any element , it applies on content box)
+
+ -for automatic height width
+  assign -> box-sizing
+          border
+          padding
+          content
+
+ -margin => outside
+
+    -  box-sizing (for assigning height width dynamically so padding and border must be compensate in that)
+       if you dont use box-sizing then padding and border applies to content-box
+------------------------------------------------------------------------------------------------------------------
+
+FLOAT:
+float left
+float right
+float none
+
+float is forcefully
+  -always wrap float inside element
+  -parent can't be float
+
+.container:after{
+content : ""
+display : table
+width   : 100%
+}
+-------------------------------------------------------------------------------------------------------------------------
+
+browser works as intepreter , it executes statement one by one from top to bottom.
+fon-size : 12px
+font-size : 18px
+font-size : 2px
+then it goes for font-size 2px
+---------------------------------------------------------------------
+priorities
+name selector
+class selector
+id selector
+inline
+     
