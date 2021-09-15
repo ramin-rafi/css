@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Glory', sans-serif; */
+
+:root {
+    /* What is root */
+}
+
+body {
+    color: #2D2926;
+    font-family: 'Glory', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.clearfix::after,
+.container::after {
+    content: "";
+    display: table;
+    width: 100%;
+}
+
+.btn {
+    border: 0;
+    background-color: #36bc74;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    outline: none;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #23a560;
+}
+
+.btn:focus {
+    background-color: #239156;
+}
+
+.primary {
+    background-color: #1ba8ed;
+}
+
+.primary:hover {
+    background-color: #1d8ec7;
+}
+
+.primary:focus {
+    background-color: #0c85c2;
+}
+
+label {
+    color: #2D2926;
+    display: block;
+    font-size: 16px;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.input {
+    border: 1px solid #dbdcde;
+    display: block;
+    height: 44px;
+    line-height: 22px;
+    outline: none;
+    padding: 10px 25px;
+    width: 100%;
+}
