@@ -3,7 +3,34 @@
 
 :root {
     /* What is root */
+    /* Define Variable */
+    --white: #f0f0f0;
+    --blue: #1ba8ed;
+    --blueHover: #1d8ec7;
+    --blueFocus: #0c85c2;
+
+    --dark: #18303d;
+    --black: #2d2926;
+    --green: #36bc74;
+    --greenHover: #0caf58;
+    --greenFocus: #2ea164;
+
+    --red: #f35800;
+    --yellow: #ffbc3e;
+    --gray: #888d99;
+    --grayHover: #787c86;
+    --grayFocus: #6f737a;
+
+    --lightGray: #dbdcde;
 }
+
+/*
+Prefix  =   > -keyWord-
+            > -moz-
+            > -o-
+            > -ms-
+            > -webkit-
+*/
 
 body {
     color: #2D2926;
@@ -18,24 +45,61 @@ body {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+a:hover,
+a:focus,
+a:active,
+a:link {
+
+}
+
+table,
+.table {
+
+}
+
+
 .container {
     margin: 0 auto;
     max-width: 1170px;
 }
 
 .clearfix::after,
+.row:after,
 .container::after {
     content: "";
     display: table;
     width: 100%;
 }
 
+.row {
+    outline: 1px solid var(--yellow);
+    margin-bottom: 15px;
+}
+
+.row > .btn {
+    margin: 10px;
+}
+
+
+/* Button CSS Style */
 .btn {
     border: 0;
-    background-color: #36bc74;
+    background-color: var(--gray);
     border-radius: 5px;
     box-shadow: none;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -43,31 +107,105 @@ body {
     line-height: 24px;
     outline: none;
     padding: 10px 25px;
+    text-align: center;
     text-decoration: none;
 }
 
-.btn:hover {
-    background-color: #23a560;
+.btn:hover,
+.btn.has-hover {
+    background-color: var(--grayHover);
 }
 
-.btn:focus {
-    background-color: #239156;
+.btn:focus,
+.btn.has-focus {
+    background-color: var(--grayFocus);
 }
 
-.primary {
-    background-color: #1ba8ed;
+.btn.disabled,
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
 }
 
-.primary:hover {
-    background-color: #1d8ec7;
+.btn.disabled,
+.btn:disabled,
+.btn.disabled:hover,
+.btn.disabled:focus,
+.btn:hover:disabled,
+.btn:focus:disabled {
+    background-color: var(--gray);
+    cursor: not-allowed;
+    opacity: 0.8;
 }
 
-.primary:focus {
-    background-color: #0c85c2;
+/* Buttom Primary CSS Style */
+.btn-primary {
+    background-color: var(--blue);
 }
 
+.btn-primary:hover,
+.btn-primary.has-hover {
+    background-color: var(--blueHover);
+}
+
+.btn-primary:focus,
+.btn-primary.has-focus {
+    background-color: var(--blueFocus);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary:hover:disabled,
+.btn-primary:focus:disabled {
+    background-color: var(--blue);
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+
+/* Buttom Success CSS Style */
+.btn-success {
+    background-color: var(--green);
+}
+
+.btn-success:hover,
+.btn-success.has-hover {
+    background-color: var(--greenHover);
+}
+
+.btn-success:focus,
+.btn-success.has-focus {
+    background-color: var(--greenFocus);
+}
+
+.btn-success.disabled,
+.btn-success:disabled,
+.btn-success.disabled:hover,
+.btn-success.disabled:focus,
+.btn-success:hover:disabled,
+.btn-success:focus:disabled {
+    background-color: var(--blue);
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+
+/* Compound Selector */
+.btn.btn-lg {
+    font-size: 22px;
+    line-height: 36px;
+    padding: 20px 30px;
+    min-width: 180px;
+}
+
+
+
+
+/* Form CSS Style */
 label {
-    color: #2D2926;
+    color: var(--black);
     display: block;
     font-size: 16px;
     margin: 0 0 15px;
@@ -75,7 +213,7 @@ label {
 }
 
 .input {
-    border: 1px solid #dbdcde;
+    border: 1px solid var(--lightGray);
     display: block;
     height: 44px;
     line-height: 22px;
