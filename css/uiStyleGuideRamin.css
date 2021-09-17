@@ -1,0 +1,663 @@
+:root {
+	/* What is root */
+	/* Define Variable */
+	--blue: #1ba8ed;
+	--blueHover: #1d8ec7;
+	--blueFocus: #0c85c2;
+	--black: #2d2926;
+	--dark: #18303d;
+	--darkturquoise: rgb(53, 109, 109);
+
+	--greenFocus: #2ea164;
+	--grayFocus: #6f737a;
+	--green: #36bc74;
+	--gray: #888d99;
+	--greenHover: #0caf58;
+	--grayHover: #787c86;
+
+	--lightGray: #dbdcde;
+	--lightGrayHover: #dfdfdfcc;
+	--lightGrayFocus: #b3b3b3cc;
+	--pink: rgb(255, 6, 130);
+	--pinkHover: rgba(255, 46, 151, 0.747);
+	--pinkFocus: rgb(211, 9, 110);
+	--red: #f35800;
+	--redHover: #ff6004c5;
+	--redFocus: #d14e02;
+	--white: #f0f0f0;
+	--yellow: #ffbc3e;
+	--yellowHover: #fcbd48e8;
+	--yellowFocus: #f5a818;
+}
+
+/*
+Prefix  =   > -keyWord-
+            > -moz-
+            > -o-
+            > -ms-
+            > -webkit-
+*/
+
+body {
+	color: #2d2926;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--gray);
+	margin: 35px 0 35px;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+	background-color: var(--lightGrayHover);
+	color: var(--dark);
+}
+
+h1 {
+	font-size: 72px;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+.clearfix::after,
+.row:after,
+.container::after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.row > .btn {
+	margin: 10px;
+}
+
+/* Button CSS Style */
+.btn {
+	border: 0;
+	background-color: var(--gray);
+	border-radius: 5px;
+	box-shadow: none;
+	color: var(--white);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	outline: none;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn:hover,
+.btn.has-hover {
+	background-color: var(--grayHover);
+}
+
+.btn:focus,
+.btn.has-focus {
+	background-color: var(--grayFocus);
+}
+
+.btn.disabled,
+.btn:disabled {
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+.btn.disabled,
+.btn:disabled,
+.btn.disabled:hover,
+.btn.disabled:focus,
+.btn:hover:disabled,
+.btn:focus:disabled {
+	background-color: var(--gray);
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+/* Buttom Primary CSS Style */
+.btn-primary {
+	background-color: var(--blue);
+}
+
+.btn-primary:hover,
+.btn-primary.has-hover {
+	background-color: var(--blueHover);
+}
+
+.btn-primary:focus,
+.btn-primary.has-focus {
+	background-color: var(--blueFocus);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary:hover:disabled,
+.btn-primary:focus:disabled {
+	background-color: var(--blue);
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+/* Buttom Success CSS Style */
+.btn-success {
+	background-color: var(--green);
+}
+
+.btn-success:hover,
+.btn-success.has-hover {
+	background-color: var(--greenHover);
+}
+
+.btn-success:focus,
+.btn-success.has-focus {
+	background-color: var(--greenFocus);
+}
+
+.btn-success.disabled,
+.btn-success:disabled,
+.btn-success.disabled:hover,
+.btn-success.disabled:focus,
+.btn-success:hover:disabled,
+.btn-success:focus:disabled {
+	background-color: var(--blue);
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+/* Compound Selector */
+.btn.btn-lg {
+	font-size: 22px;
+	line-height: 36px;
+	padding: 20px 30px;
+	min-width: 180px;
+}
+
+/* Form CSS Style */
+label {
+	color: var(--black);
+	display: block;
+	font-size: 16px;
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+.row label:first-child {
+	font-weight: 500;
+}
+
+.container .row label {
+	font-weight: 600;
+}
+
+.container .row small {
+	font-style: normal;
+}
+
+.input {
+	border: 1px solid var(--lightGray);
+	display: block;
+	height: 44px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	outline: none;
+	padding: 10px 25px;
+	width: 100%;
+}
+
+.in-error {
+	border: 1px solid var(--red);
+	filter: drop-shadow(0 0 2px var(--red));
+}
+
+.in-error::placeholder {
+	color: var(--red);
+}
+
+.in-success {
+	border: 1px solid var(--green);
+	filter: drop-shadow(0 0 2px var(--green));
+}
+
+.in-success::placeholder {
+	color: var(--green);
+}
+
+.in-hover {
+	background-color: var(--lightGrayHover);
+	border: 1px solid var(--gray);
+	filter: drop-shadow(0 0 2px var(--gray));
+}
+
+.thumbnail img {
+	border-radius: 50%;
+	display: inline-block;
+	height: 100px;
+	margin: 10px;
+	width: 100px;
+}
+
+.thumbnail .small {
+	height: 75px;
+	width: 75px;
+}
+
+.thumbnail .smaller {
+	height: 50px;
+	width: 50px;
+}
+
+.row .thumbnail small {
+	color: var(--dark);
+	font-style: normal;
+	font-weight: 500;
+	padding-right: 15px;
+	padding-left: 10px;
+}
+
+img:hover {
+	opacity: 0.8;
+}
+
+.in-focus {
+	border: 2px solid var(--grayFocus);
+	outline: 1px solid var(--gray);
+}
+
+small {
+	font-style: italic;
+	padding: 0 0 20px;
+}
+
+table {
+	width: 100%;
+}
+
+table,
+tr,
+td {
+	border: 1px solid #eee;
+	border-collapse: collapse;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+table {
+	border: 6px solid var(--blue);
+	margin: 50px 0;
+}
+
+td:hover {
+	background-color: var(--lightGrayHover);
+}
+
+tr:nth-child(odd):first-child {
+	background-color: var(--darkturquoise);
+	color: var(--white);
+}
+
+small {
+	color: var(--red);
+}
+
+.ss {
+	color: var(--green);
+}
+
+.sidebyside p {
+	color: var(--blue);
+	display: inline-block;
+	width: 45%;
+	padding-right: 20px;
+}
+
+.lead {
+	color: var(--green);
+}
+
+.links {
+	margin-bottom: 20px;
+}
+
+a:link {
+	display: block;
+	color: var(--red);
+}
+
+/* visited link */
+a:visited {
+	color: var(--green);
+}
+
+/* mouse over link */
+a:hover {
+	color: var(--pink);
+}
+
+/* selected link */
+a:active {
+	color: var(--blue);
+}
+
+.sizechg:hover {
+	font-size: 20px;
+}
+
+.bgchg:hover {
+	background-color: var(--lightGray);
+	max-width: 32%;
+}
+
+.ffchg:hover {
+	font-family: cursive;
+	font-weight: 500;
+}
+
+.linkbtn {
+	background-color: var(--white);
+	color: var(--dark);
+	border: 2px solid var(--blue);
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 30%;
+}
+
+.linkbtn:hover,
+.linkbtn:active {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.linkbtn:visited {
+	color: var(--blue);
+}
+
+li {
+	padding: 6px;
+}
+
+ul {
+	background-color: var(--darkturquoise);
+	color: var(--white);
+	list-style-type: square;
+}
+
+ol {
+	background-color: var(--dark);
+	color: var(--white);
+}
+
+li:hover {
+	background-color: var(--gray);
+}
+
+i {
+	margin-right: 15px;
+}
+
+.smalli {
+	color: var(--green);
+	font-size: 24px;
+}
+
+.defaulti {
+	color: var(--blue);
+	font-size: 32px;
+}
+
+.largei {
+	color: var(--red);
+	font-size: 48px;
+}
+
+.largeri {
+	color: var(--yellow);
+	font-size: 56px;
+}
+
+i:hover {
+	opacity: 0.8;
+}
+
+.has-icon {
+	background-color: var(--blue);
+}
+
+.has-icon:hover {
+	background-color: var(--blueHover);
+}
+
+.has-icon:focus {
+	background-color: var(--blueFocus);
+}
+
+.has-micon:hover {
+	background-color: var(--greenHover);
+}
+
+.has-micon:focus {
+	background-color: var(--greenFocus);
+}
+
+.has-micon {
+	background-color: var(--green);
+}
+
+.has-ticon {
+	background-color: var(--red);
+}
+
+.has-ticon:hover {
+	background-color: var(--redHover);
+}
+
+.has-ticon:focus {
+	background-color: var(--redFocus);
+}
+
+.has-cicon {
+	background-color: var(--yellow);
+}
+
+.has-cicon:hover {
+	background-color: var(--yellowHover);
+}
+
+.has-cicon:focus {
+	background-color: var(--yellowFocus);
+}
+
+p:hover {
+	background-color: var(--lightGrayHover);
+}
+
+.dropbtn {
+	background-color: var(--pink);
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 14px;
+	padding: 16px;
+	width: 40%;
+}
+
+.dropdown {
+	position: relative;
+	margin: 20px 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--lightGray);
+	color: var(--dark);
+	width: 40%;
+}
+
+.dropdown-content a {
+	color: var(--dark);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: var(--white);
+}
+
+.palette {
+	text-align: center;
+}
+
+.palette div {
+	color: var(--white);
+	font-weight: 500;
+	padding: 15px;
+}
+
+.bl {
+	background-color: var(--blue);
+}
+
+.bl:hover {
+	background-color: var(--blueHover);
+}
+
+.bl:focus {
+	background-color: var(--blueFocus);
+}
+
+.gr {
+	background-color: var(--green);
+}
+
+.gr:hover {
+	background-color: var(--greenHover);
+}
+
+.gr:focus {
+	background-color: var(--greenFocus);
+}
+
+.r {
+	background-color: var(--red);
+}
+
+.r:hover {
+	background-color: var(--redHover);
+}
+
+.r:focus {
+	background-color: var(--redFocus);
+}
+
+.y {
+	background-color: var(--yellow);
+}
+
+.y:hover {
+	background-color: var(--yellowHover);
+}
+
+.y:focus {
+	background-color: var(--yellowFocus);
+}
+
+.p {
+	background-color: var(--pink);
+}
+
+.p:hover {
+	background-color: var(--pinkHover);
+}
+
+.p:hover {
+	background-color: var(--pinkFocus);
+}
+
+.g {
+	background-color: var(--gray);
+}
+
+.g:hover {
+	background-color: var(--grayHover);
+	color: var(--dark);
+}
+
+.g:focus {
+	background-color: var(--grayFocus);
+}
+
+.lg {
+	background-color: var(--lightGray);
+}
+
+.lg:hover {
+	background-color: var(--lightGrayHover);
+	color: var(--dark);
+}
+
+.lg:focus {
+	background-color: var(--lightGrayFocus);
+	color: var(--dark);
+}
+
+.d {
+	background-color: var(--dark);
+}
