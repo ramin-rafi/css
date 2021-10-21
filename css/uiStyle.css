@@ -217,13 +217,18 @@ label {
 
 /* CSS Checkbox Style */
 .checkbox {
+<<<<<<< HEAD
 	background-color: #e2f6ffce;
+=======
+	background-color: #d8f3ff;
+>>>>>>> aa1db61042534b3ba49f6a3e725dbb7b97a8786d
 	position: relative;
 	padding: 15px;
 	margin: 15px;
 }
 
 .checkbox input {
+<<<<<<< HEAD
 	opacity: 0;
 	cursor: pointer;
 	height: 0;
@@ -232,10 +237,17 @@ label {
 
 .checkbox input + i {
 	border: 2px solid var(--grayFocus);
+=======
+}
+
+.checkbox input + i {
+	border: 2px solid rgb(69, 252, 115);
+>>>>>>> aa1db61042534b3ba49f6a3e725dbb7b97a8786d
 	display: inline-block;
 	line-height: 16px;
 	height: 20px;
 	width: 20px;
+<<<<<<< HEAD
 }
 /* 
 .checkbox input:checked + i {
@@ -248,3 +260,21 @@ label {
 	color: var(--white);
 	position: absolute;
 }
+=======
+}
+
+.checkbox input:checked + i::before {
+	content: "";
+}
+.checkbox i:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+>>>>>>> aa1db61042534b3ba49f6a3e725dbb7b97a8786d

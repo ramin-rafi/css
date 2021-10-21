@@ -106,8 +106,13 @@ main article {
 
 .v-nav li {
 	margin-bottom: 5px;
+<<<<<<< HEAD
+=======
 }
-
+li:hover {
+	background-color: #f0f0f0;
+>>>>>>> aa1db61042534b3ba49f6a3e725dbb7b97a8786d
+}
 .v-nav .nav-link {
 	background-color: var(--gray);
 	color: var(--black);
@@ -115,3 +120,10 @@ main article {
 	padding: 5px 15px;
 	text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+.nav-link:hover {
+	background-color: #f0f0f0;
+}
+>>>>>>> aa1db61042534b3ba49f6a3e725dbb7b97a8786d
