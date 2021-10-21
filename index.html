@@ -1,136 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<title>CSS - UI Kit</title>
 
-    <title>CSS - Intro</title>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+		<!-- CSS Style file -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/uiStyleGuideRamin.css" />
+	</head>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1>Heading Level 1</h1>
+				<h2>Heading Level 2</h2>
+				<h3>Heading Level 3</h3>
+				<h4>Heading Level 4</h4>
 
-        .box {
-            background-color: rgb(99, 201, 167);
-            color: bisque;
-            font-size: medium;
-            font-weight: bold;
-            float: left;
-            margin: 10px;
-            text-align: center;
-            width: 100px;
-        }
+				<h3>Color Palette</h3>
+				<div class="row">
+					<div class="palette">
+						<div class="bl">Blue</div>
+						<div class="gr">Green</div>
+						<div class="r">Red</div>
+						<div class="y">Yellow</div>
+						<div class="p">Pink</div>
+						<div class="g">Gray</div>
+						<div class="lg">Light Gray</div>
+						<div class="d">Dark</div>
+					</div>
+				</div>
 
-        #box-4,
-        #box-5,
-        #box-6 {
-            float: right;
-        }
+				<h3>Paragraphs here</h3>
 
-        .container {
-            margin-bottom: 20px;
-        }
+				<label>Leading Paragraph</label>
+				<p class="lead">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones. Quod quidem iam fit etiam in Academia. Duo Reges:
+					constructio interrete. Summus dolor plures dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria sunt his,
+					malane?
+				</p>
 
-        .container:after {
-            content: "";
-            display: table;
-            width: 100%;
-        }
+				<label>Normal Paragraph</label>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones. Quod quidem iam fit etiam in Academia. Duo Reges:
+					constructio interrete. Summus dolor plures dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria sunt his,
+					malane?
+				</p>
 
-        div {
-            border: 4px solid rgba(114, 212, 250, 0.664);
-            /* border-width: 2px;
-border-style: dashed;
-border-color: blue; */
-            padding: 15px;
-        }
+				<label>Small Paragraph</label>
+				<p>
+					<small
+						>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones. Quod quidem iam fit etiam in Academia. Duo
+						Reges: constructio interrete. Summus dolor plures dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae
+						contraria sunt his, malane?</small
+					>
+				</p>
 
-        h1 {
-            color: blue;
-            font-family: 'Calibri';
-            font-size: 24px;
-            font-weight: 400;
-        }
+				<label>Strong Paragraph</label>
+				<p>
+					<strong
+						>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones. Quod quidem iam fit etiam in Academia. Duo
+						Reges: constructio interrete. Summus dolor plures dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae
+						contraria sunt his, malane?
+					</strong>
+				</p>
 
-        h2 {
-            color: skyblue;
-            font-family: 'Verdana';
-        }
+				<label>Side by side paragraphs</label>
+				<div class="sidebyside">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones. Quod quidem iam fit etiam in Academia. Duo Reges:
+						constructio interrete. Summus dolor plures dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria sunt
+						his, malane?
+					</p>
+					<p class="second">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia, quae actiones. Quod quidem iam fit etiam in Academia. Duo Reges:
+						constructio interrete. Summus dolor plures dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria sunt
+						his, malane?
+					</p>
+				</div>
 
-        h3 {
-            color: green;
-            font-size: 32px;
-        }
+				<div class="links">
+					<h3>Links Using CSS</h3>
+					<a href="#">First Link. Changes color upon hover, focus and click</a>
+					<a href="https://www.google.com/" class="sizechg">Second Link. Changes font size upon hover</a>
+					<a href="#" class="bgchg">Third Link. Changes background color upon hover</a>
+					<a href="#" class="ffchg">Fourth Link. Changes font-family upon hover</a>
+					<a href="https://www.google.com/" class="linkbtn">Fifth Link as a button</a>
+				</div>
 
-        p {
-            border: 5px solid red;
-            /* box-sizing: border-box; */
-            padding: 10px;
-        }
+				<div>
+					<h3>Unordered List</h3>
+					<ul>
+						<li>Unordered list item</li>
+						<li>Unordered list item</li>
+						<li>Unordered list item</li>
+						<li>Unordered list item</li>
+						<li>Unordered list item</li>
+					</ul>
+				</div>
 
-        .paragraph {
-            float: left;
-        }
+				<ol>
+					<li>Ordered List Item</li>
+					<li>Ordered List Item</li>
+					<li>Ordered List Item</li>
+					<li>Ordered List Item</li>
+					<li>Ordered List Item</li>
+				</ol>
+			</div>
 
-        .square {
-            /* height: 268px;
-width: 268px; */
-            /* border-width: 0; */
-            float: left;
-            border-color: red;
-            height: 300px;
-            padding: 0;
-            width: 300px;
-            margin-left: 10px;
-            margin-top: 15px;
-        }
+			<div class="row">
+				<h3>Table using CSS</h3>
+				<table>
+					<tr>
+						<td>Header 1</td>
+						<td>Header 2</td>
+						<td>Header 3</td>
+						<td>Header 4</td>
+						<td>Header 5</td>
+					</tr>
+					<tr>
+						<td class="sr">1</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+					</tr>
+					<tr>
+						<td class="sr">2</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+					</tr>
+					<tr>
+						<td class="sr">3</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+					</tr>
+					<tr>
+						<td class="sr">4</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+					</tr>
+					<tr>
+						<td class="sr">5</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+						<td>Content</td>
+					</tr>
+				</table>
+			</div>
 
-        .segment:after {
-            content: "";
-            display: table;
-            width: 100%;
-        }
-    </style>
+			<div class="row">
+				<h3>Thumbnails Using CSS</h3>
+				<div class="thumbnail">
+					<img src="images/picture.jpg" alt="Thumbnail here" />
+					<small>Profile image</small>
+					<img class="small" src="images/picture.jpg" alt="Thumbnail here" />
+					<small>Profile image(small)</small>
+					<img class="smaller" src="images/picture.jpg" alt="Thumbnail here" />
+					<small>Profile image(smaller)</small>
+				</div>
+			</div>
 
-</head>
+			<div>
+				<h3>Icons Using CSS</h3>
+				<i class="glyphicon glyphicon-envelope smalli"></i>
+				<i class="glyphicon glyphicon-envelope defaulti"></i>
+				<i class="glyphicon glyphicon-envelope largei"></i>
+				<i class="glyphicon glyphicon-envelope largeri"></i>
+			</div>
 
-<body>
-    <h1>Hello Team</h1>
-    <h2>Heading 2</h2>
-    <h3 id="h3" class="h3">Heading 3</h3>
+			<div>
+				<h3>Buttons Using CSS</h3>
+				<div class="row">
+					<button class="btn" type="button">Button</button>
+					<button class="btn has-hover" type="button">Button</button>
+					<button class="btn has-focus" type="button">Button</button>
+					<button class="btn disabled" type="button">Button</button>
+				</div>
 
-    <!-- div box -->
-    <div class="container">
-        <div id="box-1" class="box">Box-1</div>
-        <div id="box-2" class="box">Box-2</div>
-        <div id="box-3" class="box">Box-3</div>
-        <div id="box-4" class="box">Box-4</div>
-        <div id="box-5" class="box">Box-5</div>
-        <div id="box-6" class="box">Box-6</div>
-    </div>
+				<div class="row">
+					<button class="btn btn-primary" type="button">Button</button>
+					<button class="btn btn-primary has-hover" type="button">Button</button>
+					<button class="btn btn-primary has-focus" type="button">Button</button>
+					<button class="btn btn-primary disabled" type="button">Button</button>
+				</div>
 
-    <div class="segment">
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia,
-            quae actiones. Quod quidem iam fit etiam in Academia. Duo Reges: constructio interrete. Summus dolor plures
-            dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria
-            sunt his, malane?</p>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Apparet statim, quae sint officia,
-            quae actiones. Quod quidem iam fit etiam in Academia. Duo Reges: constructio interrete. Summus dolor plures
-            dies manere non potest? Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quae contraria
-            sunt his, malane?</p>
-    </div>
+				<div class="row">
+					<button class="btn btn-success" type="button">Button</button>
+					<button class="btn btn-success has-hover" type="button">Button</button>
+					<button class="btn btn-success has-focus" type="button">Button</button>
+					<button class="btn btn-success disabled" type="button">Button</button>
+				</div>
 
-    <!-- <h1 style="color: blue; font-weight: 400; font-size: 48px;">
-        <font color="red" size="">Hello World!</font>
-    </h1> -->
+				<div class="row">
+					<button class="btn has-icon"><i class="fa fa-home"></i> Home</button>
+					<button class="btn has-micon"><i class="fa fa-bars"></i> Menu</button>
+					<button class="btn has-ticon"><i class="fa fa-trash"></i> Trash</button>
+					<button class="btn has-cicon"><i class="fa fa-close"></i> Close</button>
+					<button class="btn"><i class="fa fa-folder"></i> Folder</button>
+				</div>
 
-</body>
+				<div class="row">
+					<button class="btn btn-primary btn-lg" type="button">Button</button>
+					<button class="btn btn-primary btn-lg has-hover" type="button">Button</button>
+					<button class="btn btn-primary btn-lg has-focus" type="button">Button</button>
+					<button class="btn btn-primary btn-lg disabled" type="button">Button</button>
+				</div>
 
+				<div class="row">
+					<div class="dropdown">
+						<button class="dropbtn">Dropdown</button>
+						<div class="dropdown-content">
+							<a href="https://www.google.com.pk"><i class="fa fa-google"></i>Google</a>
+							<a href="https://www.youtube.com"><i class="fa fa-youtube"></i>Youtube</a>
+							<a href="https://www.facebook.com.pk"><i class="fa fa-facebook"></i>Facebook</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h3>Input Fields Using CSS</h3>
+				<div>
+					<label>Default</label>
+					<input class="input" type="text" placeholder="Type here..." />
+				</div>
+				<div>
+					<label>Input with error</label>
+					<input class="input in-error" type="text" placeholder="Type Again..." />
+					<small>Error message</small>
+				</div>
+				<div>
+					<label>Input with no error</label>
+					<input class="input in-success" type="text" placeholder="Ramin Rafi" />
+					<small class="ss">Success message</small>
+				</div>
+				<div>
+					<label>Input with hover effect</label>
+					<input class="input in-hover" type="text" placeholder="Type here..." />
+				</div>
+				<div>
+					<label>Input with focus effect</label>
+					<input class="input in-focus" type="text" placeholder="Type here..." />
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
